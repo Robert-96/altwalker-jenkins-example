@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'altwalker online tests -m models/model.json "random(vertex_coverage(100))"'
+                sh 'python -m altwalker online tests -m models/model.json "random(vertex_coverage(100))"'
             }
         }
     }
