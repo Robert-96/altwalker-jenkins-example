@@ -1,5 +1,10 @@
 pipeline {
-    agent { docker { image 'altwalker/altwalker:latest' } }
+    agent {
+        docker {
+            image 'altwalker/altwalker:latest',
+            args '-u root:root'
+        }
+    }
     stages {
         stage('test') {
             steps {
