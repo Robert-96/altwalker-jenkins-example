@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'altwalker/altwalker:latest',
+            image 'altwalker/altwalker:latest'
             args '-u root:root'
         }
     }
