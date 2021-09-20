@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'pip install -r requirements.txt'
+                sh 'sudo pip install -r requirements.txt'
                 sh 'altwalker online tests -m models/model.json "random(vertex_coverage(100))"'
             }
         }
