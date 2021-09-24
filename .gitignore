@@ -130,3 +130,6 @@ dmypy.json
 
 # AltWalker XML
 report.xml
+
+# VS Code
+.vscode/
